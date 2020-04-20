@@ -27,3 +27,17 @@ TEST(PracticeTest, is_not_a_palindrome)
     bool actual = obj.isPalindrome("ba");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, is_a_palindrome_odd)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("tacocat");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_a_palindrome_odd)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("tacokat");
+    ASSERT_FALSE(actual);
+}
