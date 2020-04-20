@@ -41,3 +41,11 @@ TEST(PracticeTest, is_not_a_palindrome_odd)
     bool actual = obj.isPalindrome("tacokat");
     ASSERT_FALSE(actual);
 }
+
+
+TEST(PracticeTest, is_a_palindrome_with_spaces)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("A nut for a jar of tuna");
+    ASSERT_TRUE(actual);
+}
