@@ -50,11 +50,24 @@ TEST(PracticeTest, is_a_palindrome_with_spaces)
     ASSERT_FALSE(actual);
 }
 
+// check if already sorted values remain sorted in descending order
 TEST(PracticeTest, already_sorted)
 {
     Practice obj;
 		int first = 3;
 		int second = 2;
+		int third = 1;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
+
+// check if first and second values get changed to correct order
+TEST(PracticeTest, sort_first_second)
+{
+    Practice obj;
+		int first = 2;
+		int second = 3;
 		int third = 1;
     obj.sortDescending(first, second, third);
     ASSERT_GE(first,second);
