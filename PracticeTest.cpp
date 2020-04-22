@@ -42,12 +42,12 @@ TEST(PracticeTest, is_not_a_palindrome_odd)
     ASSERT_FALSE(actual);
 }
 
-// If spaces count as characters, not a palindrome, but often spaces are ignored
+// If test if string is a palindrome (ignoring spaces)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
     Practice obj;
     bool actual = obj.isPalindrome("A nut for a jar of tuna");
-    ASSERT_FALSE(actual);
+    ASSERT_TRUE(actual);
 }
 
 // check if already sorted values remain sorted in descending order
