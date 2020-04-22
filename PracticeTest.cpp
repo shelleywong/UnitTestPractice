@@ -91,8 +91,8 @@ TEST(PracticeTest, sort_with_equal_values)
 {
     Practice obj;
 		int first = 1;
-		int second = 1;
-		int third = 3;
+		int second = 3;
+		int third = 1;
     obj.sortDescending(first, second, third);
     ASSERT_GE(first,second);
 		ASSERT_GE(second,third);
