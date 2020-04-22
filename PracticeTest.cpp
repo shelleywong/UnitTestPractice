@@ -73,3 +73,15 @@ TEST(PracticeTest, sort_first_second)
     ASSERT_GE(first,second);
 		ASSERT_GE(second,third);
 }
+
+// check if second and third values get changed to correct order
+TEST(PracticeTest, sort_second_third)
+{
+    Practice obj;
+		int first = 3;
+		int second = 1;
+		int third = 2;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
