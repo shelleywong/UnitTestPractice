@@ -46,8 +46,8 @@ TEST(PracticeTest, is_not_a_palindrome_odd)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("A nut for a jar of tuna");
-    ASSERT_TRUE(actual);
+    string result = obj.isPalindrome("A nut for a jar of tuna");
+    ASSERT_EQ("anutforajaroftuna",result);
 }
 
 // check if already sorted values remain sorted in descending order
