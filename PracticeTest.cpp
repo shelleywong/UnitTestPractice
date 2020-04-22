@@ -49,3 +49,14 @@ TEST(PracticeTest, is_a_palindrome_with_spaces)
     bool actual = obj.isPalindrome("A nut for a jar of tuna");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, already_sorted)
+{
+    Practice obj;
+		int first = 3;
+		int second = 2;
+		int third = 1;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
