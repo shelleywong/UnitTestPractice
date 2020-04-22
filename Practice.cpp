@@ -42,7 +42,7 @@ bool Practice::isPalindrome(string input)
     }
   }
 
-  iterator end_pos = std::remove(input.begin(), input.end(), ' ');
+  string::iterator end_pos = std::remove(input.begin(), input.end(), ' ');
   input.erase(end_pos, input.end());
 
   for(unsigned int i=0; i < input.size()/2; i++)
