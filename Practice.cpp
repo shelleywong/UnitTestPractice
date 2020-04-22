@@ -31,7 +31,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // Receive a string and return whether or not it is strictly a palindrome,
 // where it is spelled the same backwards and forwards when considering every
 // character in the string, but disregarding case ('x' is the same as 'X')
-bool Practice::isPalindrome(string & input)
+bool Practice::isPalindrome(string input)
 {
   for(unsigned int i=0; i < input.size(); i++)
   {
