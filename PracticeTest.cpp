@@ -49,13 +49,13 @@ TEST(PracticeTest, is_a_palindrome_with_capitals)
     ASSERT_TRUE(actual);
 }
 // If test if string is a palindrome (ignoring spaces)
-// TEST(PracticeTest, is_a_palindrome_with_spaces)
-// {
-//     Practice obj;
-// 		string str = "A nut for a jar of tuna";
-//     bool actual = obj.isPalindrome(str);
-//     //ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_a_palindrome_with_spaces)
+{
+    Practice obj;
+		string str = "A nut for a jar of tuna";
+    bool actual = obj.isPalindrome(str);
+    ASSERT_TRUE(actual);
+}
 
 // check if already sorted values remain sorted in descending order
 TEST(PracticeTest, already_sorted)

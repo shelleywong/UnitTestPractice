@@ -28,6 +28,20 @@ void Practice::sortDescending(int & first, int & second, int & third)
   }
 }
 
+void removeSpaces(char *str)
+{
+    // To keep track of non-space character count
+    int count = 0;
+
+    // Traverse the given string. If current character
+    // is not space, then place it at index 'count++'
+    for (int i = 0; str[i]; i++)
+        if (str[i] != ' ')
+            str[count++] = str[i]; // here count is
+                                   // incremented
+    str[count] = '\0';
+}
+
 // Receive a string and return whether or not it is strictly a palindrome,
 // where it is spelled the same backwards and forwards when considering every
 // character in the string, but disregarding case ('x' is the same as 'X')
@@ -41,8 +55,8 @@ bool Practice::isPalindrome(string input)
       input[i] = input[i] - ('a' - 'A');
     }
   }
-
-  input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
+  removeSpaces(input);
+  // input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
 
   for(unsigned int i=0; i < input.size()/2; i++)
   {
