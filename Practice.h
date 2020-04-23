@@ -10,6 +10,7 @@ class Practice
 public:
   void sortDescending(int & first, int & second, int & third);
   bool isPalindrome(string input);
+  string removeSpaces(string input);
 };
 
 #endif
