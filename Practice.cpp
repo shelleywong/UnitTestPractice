@@ -30,7 +30,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
   }
 }
 
-string removeSpaces(string input)
+string Practice::removeSpaces(string input)
 {
     char * str = new char [input.length()+1];
     memcpy ( str, input.data(), input.length()+1 );
@@ -62,7 +62,7 @@ bool Practice::isPalindrome(string input)
       input[i] = input[i] - ('a' - 'A');
     }
   }
-  
+
   input = removeSpaces(input);
   // input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
 
