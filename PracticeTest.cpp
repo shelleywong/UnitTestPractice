@@ -56,6 +56,14 @@ TEST(PracticeTest, is_a_palindrome_one_char)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, remove_spaces)
+{
+    Practice obj;
+		string str = "A nut for a jar of tuna";
+    String result = obj.isPalindrome(str);
+    ASSERT_EQ(result,str);
+}
+
 // If test if string is a palindrome (ignoring spaces)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
