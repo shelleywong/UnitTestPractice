@@ -83,7 +83,7 @@ TEST(PracticeTest, is_a_palindrome_with_spaces)
     ASSERT_TRUE(actual);
 }
 
-// check if test actually removes spaces
+// check if method to remove spaces actually removes spaces
 TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
@@ -92,7 +92,7 @@ TEST(PracticeTest, remove_spaces)
     ASSERT_EQ(result,"neveroddoreven");
 }
 
-// check that test removes spaces (same string should be false)
+// check if method removed spaces (same string should be false)
 TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
@@ -168,6 +168,18 @@ TEST(PracticeTest, sort_negative)
 		int first = -3;
 		int second = -2;
 		int third = -1;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
+
+// check if negative, positive, zero gets sorted correctly
+TEST(PracticeTest, sort_negative)
+{
+    Practice obj;
+		int first = 3;
+		int second = 0;
+		int third = -2;
     obj.sortDescending(first, second, third);
     ASSERT_GE(first,second);
 		ASSERT_GE(second,third);
