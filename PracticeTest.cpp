@@ -71,7 +71,7 @@ TEST(PracticeTest, is_not_a_palindrome_numbers)
 {
     Practice obj;
     bool actual = obj.isPalindrome("202020");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 // check if string is a palindrome (ignoring spaces)
