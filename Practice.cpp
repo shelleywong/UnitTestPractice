@@ -10,6 +10,12 @@ using std::string;
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
 {
+  if( first < third )
+  {
+    int temp = first;
+    first = third;
+    third = temp;
+  }
   if( first < second )
   {
     int temp = first;
@@ -20,12 +26,6 @@ void Practice::sortDescending(int & first, int & second, int & third)
   {
     int temp = second;
     second = third;
-    third = temp;
-  }
-  if( first < third )
-  {
-    int temp = first;
-    first = third;
     third = temp;
   }
 }

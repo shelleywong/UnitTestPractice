@@ -59,9 +59,9 @@ TEST(PracticeTest, is_a_palindrome_one_char)
 TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
-		string str = "A nut for a jar of tuna";
+		string str = "never odd or even";
     string result = obj.removeSpaces(str);
-    ASSERT_EQ(result,str);
+    ASSERT_EQ(result,"neveroddoreven");
 }
 
 // If test if string is a palindrome (ignoring spaces)
