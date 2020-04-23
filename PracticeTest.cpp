@@ -60,7 +60,7 @@ TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
 		string str = "A nut for a jar of tuna";
-    String result = obj.isPalindrome(str);
+    string result = obj.removeSpaces(str);
     ASSERT_EQ(result,str);
 }
 
