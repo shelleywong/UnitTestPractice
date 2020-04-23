@@ -174,7 +174,7 @@ TEST(PracticeTest, sort_negative)
 }
 
 // check if negative, positive, zero gets sorted correctly
-TEST(PracticeTest, sort_negative)
+TEST(PracticeTest, sort_pos_zero_neg)
 {
     Practice obj;
 		int first = 3;
