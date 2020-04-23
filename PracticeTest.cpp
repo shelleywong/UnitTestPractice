@@ -83,7 +83,7 @@ TEST(PracticeTest, is_a_palindrome_special_chars)
 }
 
 // check palindrome with all special chars
-TEST(PracticeTest, is_a_palindrome_special_chars)
+TEST(PracticeTest, is_a_palindrome_all_special_chars)
 {
     Practice obj;
     bool actual = obj.isPalindrome("!@#$$#@!");
