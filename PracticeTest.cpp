@@ -74,6 +74,22 @@ TEST(PracticeTest, is_not_a_palindrome_numbers)
     ASSERT_FALSE(actual);
 }
 
+// check palindrome with special chars mixed in
+TEST(PracticeTest, is_a_palindrome_special_chars)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("20/2/02");
+    ASSERT_TRUE(actual);
+}
+
+// check palindrome with all special chars
+TEST(PracticeTest, is_a_palindrome_special_chars)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("!@#$$#@!");
+    ASSERT_TRUE(actual);
+}
+
 // check if string is a palindrome (ignoring spaces)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
