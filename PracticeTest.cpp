@@ -122,13 +122,13 @@ TEST(PracticeTest, sort_with_equal_values)
 }
 
 // check if values originally in opposite order get sorted correctly
-// TEST(PracticeTest, sort_backwards)
-// {
-//     Practice obj;
-// 		int first = 1;
-// 		int second = 2;
-// 		int third = 3;
-//     obj.sortDescending(first, second, third);
-//     ASSERT_GE(first,second);
-// 		ASSERT_GE(second,third);
-// }
+TEST(PracticeTest, sort_backwards)
+{
+    Practice obj;
+		int first = 1;
+		int second = 2;
+		int third = 3;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
