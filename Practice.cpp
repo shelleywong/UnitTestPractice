@@ -28,8 +28,11 @@ void Practice::sortDescending(int & first, int & second, int & third)
   }
 }
 
-void removeSpaces(char *str)
+string removeSpaces(string input)
 {
+    char * str = new char [input.length()+1];
+    std::strcpy (str, input.c_str());
+    // str = input.c_str();
     // To keep track of non-space character count
     int count = 0;
 
@@ -40,6 +43,8 @@ void removeSpaces(char *str)
             str[count++] = str[i]; // here count is
                                    // incremented
     str[count] = '\0';
+    std::string myCppString = str;
+    return myCppString;
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
@@ -55,7 +60,7 @@ bool Practice::isPalindrome(string input)
       input[i] = input[i] - ('a' - 'A');
     }
   }
-  removeSpaces(input);
+  input = removeSpaces(input);
   // input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
 
   for(unsigned int i=0; i < input.size()/2; i++)
