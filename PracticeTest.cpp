@@ -132,3 +132,15 @@ TEST(PracticeTest, sort_backwards)
     ASSERT_GE(first,second);
 		ASSERT_GE(second,third);
 }
+
+// check if values originally in opposite order get sorted correctly
+TEST(PracticeTest, sort_negative)
+{
+    Practice obj;
+		int first = -3;
+		int second = -2;
+		int third = -1;
+    obj.sortDescending(first, second, third);
+    ASSERT_GE(first,second);
+		ASSERT_GE(second,third);
+}
