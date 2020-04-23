@@ -42,6 +42,7 @@ TEST(PracticeTest, is_not_a_palindrome_odd)
     ASSERT_FALSE(actual);
 }
 
+// check if capital letters make a difference
 TEST(PracticeTest, is_a_palindrome_with_capitals)
 {
     Practice obj;
@@ -49,6 +50,7 @@ TEST(PracticeTest, is_a_palindrome_with_capitals)
     ASSERT_TRUE(actual);
 }
 
+// check 1 char palindrome
 TEST(PracticeTest, is_a_palindrome_one_char)
 {
     Practice obj;
@@ -56,6 +58,32 @@ TEST(PracticeTest, is_a_palindrome_one_char)
     ASSERT_TRUE(actual);
 }
 
+// check palindrome of numbers (true)
+TEST(PracticeTest, is_a_palindrome_numbers)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("0202020");
+    ASSERT_TRUE(actual);
+}
+
+// check palindrome of numbers (false)
+TEST(PracticeTest, is_not_a_palindrome_numbers)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("202020");
+    ASSERT_TRUE(actual);
+}
+
+// check if string is a palindrome (ignoring spaces)
+TEST(PracticeTest, is_a_palindrome_with_spaces)
+{
+    Practice obj;
+		string str = "A nut for a jar of tuna";
+    bool actual = obj.isPalindrome(str);
+    ASSERT_TRUE(actual);
+}
+
+// check if test actually removes spaces
 TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
@@ -64,13 +92,13 @@ TEST(PracticeTest, remove_spaces)
     ASSERT_EQ(result,"neveroddoreven");
 }
 
-// If test if string is a palindrome (ignoring spaces)
-TEST(PracticeTest, is_a_palindrome_with_spaces)
+// check that test removes spaces (same string should be false)
+TEST(PracticeTest, remove_spaces)
 {
     Practice obj;
-		string str = "A nut for a jar of tuna";
-    bool actual = obj.isPalindrome(str);
-    ASSERT_TRUE(actual);
+		string str = "never odd or even";
+    string result = obj.removeSpaces(str);
+    ASSERT_NE(result,"never odd or even");
 }
 
 // check if already sorted values remain sorted in descending order
@@ -133,7 +161,7 @@ TEST(PracticeTest, sort_backwards)
 		ASSERT_GE(second,third);
 }
 
-// check if values originally in opposite order get sorted correctly
+// check if negative values get sorted correctly
 TEST(PracticeTest, sort_negative)
 {
     Practice obj;
