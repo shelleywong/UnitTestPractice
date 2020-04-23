@@ -1,5 +1,6 @@
 #include "Practice.h"
 #include <string>
+#include <stdio.h>
 #include <algorithm>
 
 using std::string;
