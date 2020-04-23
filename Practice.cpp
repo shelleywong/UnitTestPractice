@@ -34,8 +34,7 @@ string removeSpaces(string input)
 {
     char * str = new char [input.length()+1];
     memcpy ( str, input.data(), input.length()+1 );
-    // std::strcpy (str, input.c_str());
-    // str = input.c_str();
+
     // To keep track of non-space character count
     int count = 0;
 
@@ -63,6 +62,7 @@ bool Practice::isPalindrome(string input)
       input[i] = input[i] - ('a' - 'A');
     }
   }
+  
   input = removeSpaces(input);
   // input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
 

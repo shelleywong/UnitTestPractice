@@ -48,6 +48,14 @@ TEST(PracticeTest, is_a_palindrome_with_capitals)
     bool actual = obj.isPalindrome("MadAm");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_a_palindrome_one_char)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a");
+    ASSERT_TRUE(actual);
+}
+
 // If test if string is a palindrome (ignoring spaces)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
