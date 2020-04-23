@@ -84,7 +84,7 @@ TEST(PracticeTest, is_a_palindrome_with_spaces)
 }
 
 // check if method to remove spaces actually removes spaces
-TEST(PracticeTest, remove_spaces)
+TEST(PracticeTest, spaces_removed)
 {
     Practice obj;
 		string str = "never odd or even";
@@ -93,7 +93,7 @@ TEST(PracticeTest, remove_spaces)
 }
 
 // check if method removed spaces (same string should be false)
-TEST(PracticeTest, remove_spaces)
+TEST(PracticeTest, remove_spaces_not_same)
 {
     Practice obj;
 		string str = "never odd or even";
