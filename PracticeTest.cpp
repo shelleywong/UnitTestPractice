@@ -90,6 +90,14 @@ TEST(PracticeTest, is_a_palindrome_all_special_chars)
     ASSERT_TRUE(actual);
 }
 
+// check not a palindrome with all special chars
+TEST(PracticeTest, is_not_a_palindrome_special_chars)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("r@cecar");
+    ASSERT_FALSE(actual);
+}
+
 // check if string is a palindrome (ignoring spaces)
 TEST(PracticeTest, is_a_palindrome_with_spaces)
 {
